@@ -170,7 +170,30 @@ footer a:hover {
     align-items: center; 
     margin: 5% 10%; 
 }
+
+.service-offers {
+    position: relative;
+    overflow: hidden;
+    margin: 5%;
+    text-align: center;
+}
+
+.service-offer-slide {
+    display: none;
+    padding: 20px;
+}
+
+/* Ensure only the active slide is displayed */
+.service-offer-slide.active {
+    display: block;
+}
+
 ul {
     list-style-type: none;
 }
 
+/* Navigation buttons */
+.prev, .next{
+    cursor: pointer;
+    font-size: 30px;
+}
