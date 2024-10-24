@@ -20,65 +20,95 @@
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="login.html">Login</a></li>
                     <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Body Section -->
-    <section class="main-section" id="services-section">
-        <div class="Video_Prodcution">
-            <h2>Cinematic Video Production</h2>
-            <p>We bring stories to life with stunning visual narratives. From concept to post-production, Eclectic Eel specializes in creating high-quality cinematic videos for a wide range of industries, including entertainment, corporate, and advertising.</p>
+    <section class="main-section">
+        <section class="body-services">
+        
+        <img src="asset/services-1.png" class="image-service" alt="image 1">
+        
+        <div class="service-offers">
+        <div class="service-offer-slide">
+            <h2>Cinematic Animation Production</h2><br><br>
+            <p>At Eclectic Eel, we bring stories to life through stunning animation. From concept to final render, we specialize in creating high-quality, cinematic animation for various industries, including entertainment, corporate, and advertising.</p>
+            <br>
             <h3>What we offer:</h3>
             <ul>
-                <li>Full video production services including scriptwriting, directing, filming, and editing.</li>
+                <p>Full animation production services including storyboarding:</p> 
+                <li>Character design</li>
+                <li>2D/3D animation
+                <li>Post-production</li>
             </ul>
+            <br>
             <h3>Key features:</h3>
             <ul>
-                <li>4K resolution, drone cinematography, and seamless color grading.</li>
+                <li>High-resolution animation, fluid character motion, and seamless scene transitions.</li>
             </ul>
+            <br>
             <h3>Ideal for:</h3>
             <ul>
-                <li>Commercials, short films, corporate videos, and documentaries.</li>
+                <li>Animated films, commercials, corporate presentations, and digital advertising.</li>
             </ul>
         </div>
 
-        <div class="VFX">
-            <h2>Visual Effects (VFX)</h2>
-            <p>Transform your raw footage into a mesmerizing visual experience with our cutting-edge VFX services. Our team of skilled artists can integrate stunning visual elements to make your project unforgettable.</p>
+        <div class="service-offer-slide">
+            <h2>Visual Effects (VFX) for Animation</h2><br><br>
+            <p>Enhance your animated projects with our cutting-edge visual effects. Our team of skilled VFX artists can integrate stunning visual elements, taking your animation to the next level with precision and creativity.</p>
+            <br>
             <h3>What we offer:</h3>
             <ul>
-                <li>CGI integration, 3D modeling, motion tracking, and digital compositing.</li>
+                <li>CGI integration, 3D modeling, motion tracking, and digital compositing for animated content.</li>
             </ul>
+            <br>
             <h3>Key features:</h3>
             <ul>
-                <li>High-quality rendering, lifelike animations, and seamless visual integration.</li>
+                <li>High-quality rendering, lifelike effects, and seamless integration with animated elements.</li>
             </ul>
+            <br>
             <h3>Ideal for:</h3>
             <ul>
-                <li>Feature films, music videos, and branded content.</li>
+                <li>Animated feature films, promotional videos, and branded content.</li>
             </ul>
         </div>
 
-        <div class="MotionGraphics_Animation">
+        <div class="service-offer-slide">
             <h2>Motion Graphics & Animation</h2>
-            <p>Engage your audience with dynamic motion graphics and animation that stand out. Whether it’s a sleek explainer video or a playful animation, we tailor our work to your brand’s unique style.</p>
+            <br><br>
+            <p>Engage your audience with dynamic motion graphics and animation that stand out. Whether it’s a sleek explainer video, a vibrant logo animation, or an infographic, we tailor our work to your brand’s unique vision.</p>
+            <br>
             <h3>What we offer:</h3>
             <ul>
-                <li>2D/3D animations, kinetic typography, and infographic videos.</li>
+                <li>2D/3D animations, kinetic typography, infographic videos, and logo animation.</li>
             </ul>
+            <br>
             <h3>Key features:</h3>
             <ul>
-                <li>Customized designs, professional voiceovers, and fluid animation.</li>
+                <li>Customized designs, professional voiceovers, and smooth, eye-catching animation.</li>
             </ul>
+            <br>
             <h3>Ideal for:</h3>
             <ul>
-                <li>Explainer videos, product showcases, and social media content.</li>
+                <li>Explainer videos, product demonstrations, social media content, and brand storytelling.</li>
             </ul>
+            </div>
         </div>
+
+        <div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+
+        </div>
+
+        <img src="asset/services-2.png" class="image-service" alt="image 2">
+
+        </section>
 
     </section>
 
@@ -96,5 +126,7 @@
         </address>
         </div>
     </footer>
+
+    <script src="script.js"></script> 
 </body>
 </html>
