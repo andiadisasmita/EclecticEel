@@ -15,12 +15,10 @@ function showNextSlide() {
     // Show the next slide
     slides[currentSlide].style.display = 'block';
 }
-
 // Change the slide every 1.7 seconds
 setInterval(showNextSlide, 1700);
 
-// Services Slide
-// Service Offer Slideshow
+// Service Offer Manual Slideshow
 const serviceSlides = document.querySelectorAll('.service-offer-slide');
 let currentServiceSlide = 0;
 
@@ -47,3 +45,34 @@ showSlide(currentServiceSlide);
 // Add event listeners to the navigation buttons
 document.getElementById('prev-slide').addEventListener('click', () => changeSlide(-1));
 document.getElementById('next-slide').addEventListener('click', () => changeSlide(1));
+
+// Contact us Form - hide/show other reasons input field
+document.addEventListener('DOMContentLoaded', function() {
+    const reasonSelect = document.getElementById('reason');
+    const otherReasonField = document.getElementById('other-reason');
+
+    // Add event listener for the "reason" dropdown change
+    reasonSelect.addEventListener('change', function() {
+        if (this.value === 'other') {
+            otherReasonField.style.display = 'block'; // Show the "other reason" field
+        } else {
+            otherReasonField.style.display = 'none'; // Hide it otherwise
+        }
+    });
+});
+
+// Login Form 
+document.addEventListener('DOMContentLoaded', function() {
+    const loginForm = document.querySelector('.login-form');
+    const loginButton = document.querySelector('.login');
+
+    // Initially hide the form
+    loginForm.style.display = 'none';
+
+    // Toggle the form when "Login Now" button is clicked
+    loginButton.addEventListener('click', function() {
+        if (loginForm.style.display === 'none') {
+            loginForm.style.display = 'block';
+        }
+    });
+});
