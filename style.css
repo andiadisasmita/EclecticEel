@@ -299,4 +299,6 @@ input:focus, select:focus, textarea:focus {
 /* body - login */
 .login-form{
     margin-top: 25px;
+    display: none;
 }
+

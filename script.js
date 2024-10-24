@@ -62,17 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Login Form 
-document.addEventListener('DOMContentLoaded', function() {
-    const loginForm = document.querySelector('.login-form');
-    const loginButton = document.querySelector('.login');
 
-    // Initially hide the form
-    loginForm.style.display = 'none';
 
-    // Toggle the form when "Login Now" button is clicked
-    loginButton.addEventListener('click', function() {
-        if (loginForm.style.display === 'none') {
-            loginForm.style.display = 'block';
-        }
-    });
-});
+
