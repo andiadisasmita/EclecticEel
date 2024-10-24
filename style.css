@@ -88,13 +88,13 @@ footer address {
 }
 
 footer a {
-    color: #bdbdbd; /* White for footer links */
+    color: #bdbdbd;
     text-decoration: none;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #e0e0e0; /* Light grey hover color */
+    color: #e0e0e0; 
 }
 
 /* Main Section - All Pages */
@@ -129,5 +129,36 @@ footer a:hover {
 .body-home-right{
     margin: 15% 0;
     padding-right: 20%;
+    text-align: justify;
 }
 
+/* Body Section - About Us */
+.body-aboutus{
+    display: flex;
+    flex-direction: row;
+}
+.body-aboutus-left{
+    margin: 10% 10%;
+    text-align: justify;
+}
+
+/* Initially Hide slideshow image 2 & 3 */
+#aboutus-2{
+    display: none;
+}
+#aboutus-3{
+    display: none;
+}
+
+.body-aboutus-right{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.slideshow{
+    width: 100%;
+    height: auto;
+    display: block;
+}
